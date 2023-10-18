@@ -7,11 +7,12 @@ import {
 } from "react-router-dom";
 import { productsData } from "./api/Api";
 import Header from "./components/Header";
-import Product from "./components/Product";
 import Home from "./Home";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Checkout from "./pages/Checkout";
+import Productpage from "./Productpage";
+
 const Layout = () => {
   return (
     <div>
@@ -32,8 +33,9 @@ const router = createBrowserRouter([
         loader: productsData,
       },
       {
-        path: "/product/:id",
-        element: <Product />,
+        path: "/products",
+        element: <Productpage />,
+        loader: productsData,
       },
       {
         path: "/cart",

@@ -60,7 +60,8 @@ const Header = () => {
           <div>
             <img
               className="w-15 h-15 rounded-full"
-              src="https://res.cloudinary.com/dehghhzey/image/upload/v1684640390/logo_glmbmg.jpg"  alt=""
+              src="https://res.cloudinary.com/dehghhzey/image/upload/v1684640390/logo_glmbmg.jpg"
+              alt=""
             />
           </div>
         </Link>
